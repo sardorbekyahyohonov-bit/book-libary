@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkBook — Библиотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="#home" class="logo">
+            <span class="logo-symbol">◈</span>
+            <span class="logo-text">DarkBook</span>
+        </a>
+
+        <nav class="nav">
+            <a href="#home">Главная</a>
+            <a href="#library">Библиотека</a>
+            <a href="#about">О сайте</a>
+        </nav>
+
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+
+            <div class="hero-content">
+                <div class="hero-tag">DARKBOOK LIBRARY</div>
+
+                <h1>
+                    Книги, которые<br>
+                    <span>хранят истории.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Большая цифровая библиотека для чтения любимых книг
+                    в удобном тёмном интерфейсе.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#library" class="primary-button">
+                        Открыть библиотеку →
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        Узнать больше
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="book-shadow"></div>
+
+                <div class="big-book">
+                    <div class="book-cover">
+                        <div class="cover-top">DARKBOOK</div>
+
+                        <div class="cover-center">
+                            <div class="cover-title">
+                                READ<br>
+                                <span>MORE</span>
+                            </div>
+                        </div>
+
+                        <div class="cover-bottom">
+                            DIGITAL LIBRARY
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section class="popular" id="popular">
+    <div class="library-container">
+
+        <div class="section-label">POPULAR</div>
+
+        <h2>Популярные книги</h2>
+
+        <p class="popular-description">
+            Самые популярные книги DarkBook
+        </p>
+
+        <div class="books-grid">
+
+            <!-- КНИГА 1 -->
+            <article class="book-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=800&q=80"
+                        alt="Приключения Тома Сойера"
+                    >
+
+                    <div class="book-cover-overlay"></div>
+
+                    <span>Приключения</span>
+                </div>
+
+                <div class="book-info">
+
+                    <div class="book-category">
+                        Приключения
+                    </div>
+
+                    <h3>
+                        Приключения Тома Сойера
+                    </h3>
+
+                    <div class="author">
+                        Марк Твен
+                    </div>
+
+                    <p class="book-description">
+                        Знаменитая история Тома Сойера и его друзей.
+                    </p>
+
+                    <button
+                        class="read-button"
+                        onclick="openBook(1)"
+                    >
+                        Читать
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- КНИГА 2 -->
+            <article class="book-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://images.unsplash.com/photo-1511108690759-009324a90311?auto=format&fit=crop&w=800&q=80"
+                        alt="Таинственный остров"
+                    >
+
+                    <div class="book-cover-overlay"></div>
+
+                    <span>Фантастика</span>
+                </div>
+
+                <div class="book-info">
+
+                    <div class="book-category">
+                        Фантастика
+                    </div>
+
+                    <h3>
+                        Таинственный остров
+                    </h3>
+
+                    <div class="author">
+                        Жюль Верн
+                    </div>
+
+                    <p class="book-description">
+                        Захватывающая история людей на таинственном острове.
+                    </p>
+
+                    <button
+                        class="read-button"
+                        onclick="openBook(2)"
+                    >
+                        Читать
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- КНИГА 3 -->
+            <article class="book-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+                        alt="Алиса в Стране чудес"
+                    >
+
+                    <div class="book-cover-overlay"></div>
+
+                    <span>Фэнтези</span>
+                </div>
+
+                <div class="book-info">
+
+                    <div class="book-category">
+                        Фэнтези
+                    </div>
+
+                    <h3>
+                        Алиса в Стране чудес
+                    </h3>
+
+                    <div class="author">
+                        Льюис Кэрролл
+                    </div>
+
+                    <p class="book-description">
+                        Необыкновенное путешествие Алисы в удивительный мир.
+                    </p>
+
+                    <button
+                        class="read-button"
+                        onclick="openBook(3)"
+                    >
+                        Читать
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- КНИГА 4 -->
+            <article class="book-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=800&q=80"
+                        alt="1984"
+                    >
+
+                    <div class="book-cover-overlay"></div>
+
+                    <span>Классика</span>
+                </div>
+
+                <div class="book-info">
+
+                    <div class="book-category">
+                        Классика
+                    </div>
+
+                    <h3>
+                        1984
+                    </h3>
+
+                    <div class="author">
+                        Джордж Оруэлл
+                    </div>
+
+                    <p class="book-description">
+                        Классический роман-антиутопия.
+                    </p>
+
+                    <button
+                        class="read-button"
+                        onclick="openBook(4)"
+                    >
+                        Читать
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- LIBRARY -->
+    <section class="library" id="library">
+        <div class="library-container">
+
+            <div class="library-header">
+                <div>
+                    <div class="section-label">LIBRARY</div>
+
+                    <h2>Все книги</h2>
+
+                    <p>
+                        Выбирай книгу и начинай читать.
+                    </p>
+                </div>
+
+                <div class="book-counter">
+                    Книг: <span id="bookCount">0</span>
+                </div>
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Поиск книги, автора или жанра..."
+                    >
+
+                    <button id="clearSearch">×</button>
+                </div>
+            </div>
+
+
+            <!-- FILTERS -->
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-category="all"
+                >
+                    Все
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="Фантастика"
+                >
+                    Фантастика
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="Приключения"
+                >
+                    Приключения
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="Классика"
+                >
+                    Классика
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="Фэнтези"
+                >
+                    Фэнтези
+                </button>
+
+            </div>
+
+
+            <!-- КАРТОЧКИ СОЗДАЮТСЯ JAVASCRIPT -->
+            <div class="books-grid" id="bookList"></div>
+
+
+            <!-- NO RESULTS -->
+            <div class="no-results" id="noResults">
+                <div class="no-results-icon">📖</div>
+
+                <h3>Книги не найдены</h3>
+
+                <p>
+                    Попробуй изменить поисковый запрос.
+                </p>
+
+                <button id="resetSearch">
+                    Сбросить поиск
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <div class="section-label">ABOUT</div>
+
+            <div class="about-text">
+                <h2>
+                    Твоя библиотека.<br>
+                    Твои истории.
+                </h2>
+
+                <p>
+                    DarkBook — это удобная цифровая библиотека,
+                    созданная для спокойного чтения без лишнего
+                    визуального шума.
+                </p>
+            </div>
+
+            <div class="about-stats">
+
+                <div class="stat">
+                    <strong id="statBooks">0</strong>
+                    <span>Книг</span>
+                </div>
+
+                <div class="stat">
+                    <strong>24/7</strong>
+                    <span>Доступ</span>
+                </div>
+
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Онлайн</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <div class="logo">
+                <span class="logo-symbol">◈</span>
+                <span class="logo-text">DarkBook</span>
+            </div>
+
+            <p>
+                Цифровая библиотека для любителей книг.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Главная</a>
+            <a href="#library">Библиотека</a>
+            <a href="#about">О сайте</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 DarkBook
+    </div>
+</footer>
+
+
+<!-- READER -->
+<div class="reader" id="reader">
+
+    <div class="reader-header">
+
+        <div class="reader-title" id="readerTitle">
+            Книга
+        </div>
+
+        <button class="close-reader" id="closeReader">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="reader-content" id="readerContent">
+
+        <h1 id="readerBookTitle"></h1>
+
+        <div class="reader-author" id="readerAuthor"></div>
+
+        <div id="readerText"></div>
+
+    </div>
+
+</div>
+
+<script src="book.js"></script>
+
+</body>
+</html>
